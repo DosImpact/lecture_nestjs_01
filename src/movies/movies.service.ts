@@ -1,6 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateMovieDto } from './dto/create-movie.dto';
+import { UpdateMovieDto } from './dto/update-movie.dto';
 import { Movie } from './entities/movie.entity';
+
+// 가상의 DB를 연결해서 데이터를 리턴해준다.
+// 예외를 발생시켜 준다.
 
 @Injectable()
 export class MoviesService {
@@ -29,7 +33,7 @@ export class MoviesService {
       ...movieData,
     });
   }
-  update(id: number, updateData) {
+  update(id: number, updateData: UpdateMovieDto) {
     const movie = this.getOne(id);
     this.deleteOne(id);
     this.movies.push({ ...movie, ...updateData });

@@ -11,6 +11,7 @@ import {
 import { MoviesService } from './movies.service';
 import { Movie } from './entities/movie.entity';
 import { CreateMovieDto } from './dto/create-movie.dto';
+import { UpdateMovieDto } from './dto/update-movie.dto';
 
 // controller의 역활
 // routing + GET/POST/PATCH 등등
@@ -52,10 +53,7 @@ export class MoviesController {
   }
 
   @Patch('/:id')
-  patch(@Param('id') id: number, @Body() movieData): string {
-    return {
-      id,
-      ...movieData,
-    };
+  patch(@Param('id') id: number, @Body() movieData: UpdateMovieDto) {
+    return this.moviesService.update(id, movieData);
   }
 }
