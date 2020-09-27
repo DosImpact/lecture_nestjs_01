@@ -6,7 +6,7 @@
 [travis-url]: https://travis-ci.org/nestjs/nest
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
-  
+
   <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -24,41 +24,63 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# 0 INTRODUCTION
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+# 0.0 🚨필독. 공지사항 🚨
 
-## Installation
+# 0.1 Welcome (03:48)
 
-```bash
-$ npm install
-```
+# 0.2 Requirements (03:15)
 
-## Running the app
+# 0.3 Project Setup (02:58)
 
-```bash
-# development
-$ npm run start
+# 1 ARCHITECTURE OF NESTJS
 
-# watch mode
-$ npm run start:dev
+# 1.0 Overview (04:58)
 
-# production mode
-$ npm run start:prod
-```
+# 1.1 Controllers (04:47)
 
-## Test
+# 1.2 Services (03:41)
 
-```bash
-# unit tests
-$ npm run test
+# 2 REST API
 
-# e2e tests
-$ npm run test:e2e
+# 2.0 Movies Controller (09:36)
 
-# test coverage
-$ npm run test:cov
-```
+# 2.1 More Routes (06:58)
+
+# 2.2 Movies Service part One (10:48)
+
+# 2.3 Movies Service part Two (08:03)
+
+# 2.4 DTOs and Validation part One (10:51)
+
+# 2.5 DTOs and Validation part Two (05:34)
+
+# 2.6 Modules and Dependency Injection (07:07)
+
+# 2.7 Express on NestJS (03:22)
+
+# 3 UNIT TESTING
+
+# 3.0 Introduction to Testing in Nest (04:53)
+
+# 3.1 Your first Unit Test (04:12)
+
+# 3.2 Testing getAll and getOne (08:16)
+
+# 3.3 Testing delete and create (07:10)
+
+# 3.4 Testing update (05:01)
+
+# 4 E2E TESTING
+
+# 4.0 Testing movies (08:31)
+
+# 4.1 Testing GET movies id (08:53)
+
+# 4.2 Testing PATH and DELETE movies id (04:09)
+
+# 4.3 Finishing Up (01:44)
 
 ## Support
 
@@ -72,4 +94,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+Nest is [MIT licensed](LICENSE).
