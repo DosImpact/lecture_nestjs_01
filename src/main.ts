@@ -7,7 +7,7 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true, // @가 붙은 type만 허용
-      forbidNonWhitelisted: true, // @가 붙은 key 외의 데이터는 금지
+      forbidNonWhitelisted: true, // @가 붙은 key 외의 데이터가 들어오면 애러
       transform: true, // param의 string 을 number로
     }),
   );
