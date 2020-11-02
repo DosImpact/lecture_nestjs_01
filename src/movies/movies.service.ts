@@ -11,10 +11,11 @@ export class MoviesService {
   private movies: Movie[] = [];
 
   getAll(): Movie[] {
-    return this.movies;
+    return this.movies; // return by ref
   }
 
   getOne(id: number): Movie {
+    // console.log("id : ", typeof id, " : ", id);
     const movie = this.movies.find(e => e.id === +id);
     if (!movie) {
       throw new NotFoundException(`movie ${id} is not found`);
